@@ -1,12 +1,12 @@
 {% set provider= "google" %}
-{% set version = "1.8.0" %}
+{% set version = "1.9.0" %}
 
 {% set name = "terraform-provider-" + provider %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
 
-{% set sha256 = "1c4855ef169d1cee093d4e1692da2795347f9ab51b71edb302f9be580f7a3b1b" %}
-{% set sha256_win32 = "88bca2701e9a6521f5628c026a3f570546c77014b3d12b71657ec403a4354e68" %}
-{% set sha256_win64 = "72fb5f292b8cac1802c9c02b16da9313baf52199aa5359095bda8941673f5ec1" %}
+{% set sha256 = "0c95afe01b4eff6ff2995925cbb79dffd7f837dfbea7030b5230adef0c010b46" %}
+{% set sha256_win32 = "8de59cb656631dd97bb091e8a5540f8e656eaf6604f79a0e0c1441ba95e2a122" %}
+{% set sha256_win64 = "dc08becc9b65c4892b113a9934a3026004141ed7125b9000869f778fa070665c" %}
 
 package:
   name: {{ name|lower }}
