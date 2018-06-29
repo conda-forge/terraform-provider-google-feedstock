@@ -1,10 +1,10 @@
 {% set provider = "google" %}
-{% set version = "1.14.0" %}
+{% set version = "1.15.0" %}
 
 {% set name = "terraform-provider-" + provider %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
 
-{% set sha256 = "fd1d5bfed37893f9754c38d68020caf8dceb3563a6295943feb506e35b894c77" %}
+{% set sha256 = "db92da7e75fd47ab1bf27900cdc5244952e67ccb566d9afd2bdc2cbfff4fedcc" %}
 {% set sha256_win64 = "64b982a09e328be9bc29360ae69170bffa424864e2dc12507c8c385c81d9ebcb" %}
 
 package:
