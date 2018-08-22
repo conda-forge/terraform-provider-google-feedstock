@@ -1,5 +1,5 @@
 {% set provider = "google" %}
-{% set version = "1.16.2" %}
+{% set version = "1.17.0" %}
 
 {% set name = "terraform-provider-" + provider %}
 {% set x4_plugin = name + '_v' + version + "_x4" %}
@@ -11,13 +11,13 @@ package:
 source:
   - folder: src/github.com/terraform-providers/{{ name|lower }}
     url: https://github.com/terraform-providers/{{ name }}/archive/v{{ version }}.tar.gz  # [not win]
-    sha256: ff71dd6de39ff2d5e0a39f033709134dbaac66e230e17f4aa2457dc2a6617f63  # [not win]
+    sha256: 0b84f1690213ca0ef34ee49f9941eecf0036502f80eac4825a03754bcc6cb1a5  # [not win]
 
     url: https://releases.hashicorp.com/{{ name }}/{{ version }}/{{ name }}_{{ version }}_windows_amd64.zip  # [win64]
-    sha256: 9e062949d931747dd3d41c5ac502aa5f3f5778ad65625571b5223e805676d148  # [win64]
+    sha256: 622e72791046b8aaa26dfd269194843070195c51140c425b1420e858c50a335d  # [win64]
 
 build:
-  number: 1
+  number: 0
   script:
     - XCOPY src\github.com\terraform-providers\{{ name|lower }}\{{ x4_plugin }}.exe %LIBRARY_BIN%  # [win]
 
