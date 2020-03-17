@@ -17,7 +17,7 @@ source:
     sha256: 7974b2f4f9e52e18f661770d85f0ec31ff1490f76ae8c29f72b7196d3bb46ff5
 
 build:
-  number: 0
+  number: 1
   script:
     - pushd {{ pkg_src }}
     - go build -v -o $GOBIN/{{ x4_plugin }} .  # [unix]
@@ -53,3 +53,5 @@ extra:
   recipe-maintainers:
     - sodre
     - agcopenhaver
+    - rluria14
+    - oblute
