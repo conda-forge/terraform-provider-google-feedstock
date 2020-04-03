@@ -156,7 +156,7 @@ Feedstock Maintainers
 =====================
 
 * [@agcopenhaver](https://github.com/agcopenhaver/)
+* [@conda-forge/terraform](https://github.com/conda-forge/terraform/)
 * [@oblute](https://github.com/oblute/)
 * [@rluria14](https://github.com/rluria14/)
-* [@sodre](https://github.com/sodre/)
 
