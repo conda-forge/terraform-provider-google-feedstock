@@ -51,7 +51,7 @@ about:
 
 extra:
   recipe-maintainers:
-    - sodre
+    - @conda-forge/terraform
     - agcopenhaver
     - rluria14
     - oblute
