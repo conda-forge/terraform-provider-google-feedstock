@@ -3,7 +3,6 @@
 {% set version = "3.16.0" %}
 
 {% set name = goname.split('/')[-1] %}
-{% set pkg_src = ('src/'+goname).replace("/",os.sep) %}
 
 {% set x4_plugin = name + '_v' + version + "_x4" + (".exe" if win else "")%}
 
@@ -12,14 +11,12 @@ package:
   version: {{ version }}
 
 source:
-  - folder: {{ pkg_src }}
-    url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-    sha256: 33b1dbdbd2d66c3a3e81462d4e3640170798b0b426ca9c13b0c75bc07d9cac5d
+  url: https://{{ goname }}/archive/v{{ version }}.tar.gz
+  sha256: 33b1dbdbd2d66c3a3e81462d4e3640170798b0b426ca9c13b0c75bc07d9cac5d
 
 build:
   number: 0
   script:
-    - pushd {{ pkg_src }}
     - go build -v -o $GOBIN/{{ x4_plugin }} .  # [unix]
     - go build -v -o %GOBIN%\{{ x4_plugin }} .  # [win]
 
