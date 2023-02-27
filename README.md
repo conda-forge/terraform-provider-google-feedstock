@@ -1,11 +1,11 @@
-About terraform-provider-google
-===============================
+About terraform-provider-google-feedstock
+=========================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/terraform-provider-google-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.terraform.io
 
 Package license: MPL-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/terraform-provider-google-feedstock/blob/main/LICENSE.txt)
 
 Summary: The Terraform Google provider
 
